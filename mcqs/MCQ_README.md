@@ -389,3 +389,308 @@ On July 21, 1969, Neil Armstrong said, "One small step for man, one giant leap f
 - [ ] Classes allow CSS to select specific elements on the page. You may list only one class name per class attribute.
 - [x] Classes allow CSS and JavaScript to select specific elements on the page. You may list as many class names within the class attribute
       as you wish, separated by spaces.
+
+#### Q21. In the following example, which selector has the highest specificity ranking for selecting the anchor link element?
+
+```css
+ul li a
+a
+.example a
+div a
+```
+
+- [x] `.example a`
+- [ ] `div a`
+- [ ] `a`
+- [ ] `ul li a`
+
+#### Q22. Using an attribute selector, how would you select an `<a>` element with a "title" attribute?
+
+- [x] a[title]{...}
+- [ ] a > title {...}
+- [ ] a.title {...}
+- [ ] a=title {...}
+
+#### Q23. CSS grid and flexbox are now becoming a more popular way to create page layouts. However, floats are still commonly used, especially when working with an older code base, or it you need to support older browser version. What are two valid techniques used to clear floats?
+
+- [ ] Use the "clearfix hack" on the floated element and add a float to the parent element.
+- [ ] Use the overflow property on the floated element or the "clearfix hack" on either the floated or parent element.
+- [ ] Use the "clearfix hack" on the floated element or the overflow property on the parent element.
+- [x] Use the "clearfix hack" on the parent element or use the overflow property with a value other than "visible."
+
+#### Q24. What element(s) do the following selectors match to?
+
+`1) .nav {...}`
+`2) nav {...}`
+`3) #nav {...}`
+
+- [ ]
+```markdown
+1. An element with an ID of "nav"
+2. A nav element
+3. An element with a class of "nav"
+```
+
+- [ ]
+```markdown
+They all target the same nav element.
+```
+
+- [x]
+```markdown
+1. An element with an class of "nav"
+2. A nav element
+3. An element with a id of "nav"
+```
+
+- [ ]
+```markdown
+1. An element with an class of "nav"
+2. A nav element
+3. An div with a id of "nav"
+```
+
+#### Q25. When adding transparency styles, what is the difference between using the opacity property versus the background property with an `rgba()` value?
+
+- [ ] Opacity specifies the level of transparency of the child elements. Background with an `rgba()` value applies transparency to the background color only.
+- [ ] Opacity applies transparency to the background color only. Background with an `rgba()` value specifies the level of transparency of an element, as a whole, including its content.
+- [x] Opacity specifies the level of transparency of an element, including its content. Background with an `rgba()` value applies transparency to the background color only.
+- [ ] Opacity applies transparency to the parent and child elements. Background with an `rgba()` value specifies the level of transparency of the parent element only.
+
+#### Q26. What is true of block and inline elements? (_Alternative_: Which statement about block and inline elements is true?)
+
+- [ ] By default, block elements are the same height and width as the content container between their tags; inline elements span the entire width of its container.
+- [x] By default, block elements span the entire width of its container; inline elements are the same height and width as the content contained between their tags.
+- [ ] A `<nav>` element is an example of an inline element. `<header>` is an example of a block element.
+- [ ] A `<span>` is an example of a block element. `<div>` is an example of an inline element.
+
+#### Q27. CSS grid introduced a new length unit, fr, to create flexible grid tracks. Referring to the code sample below, what will the widths of the three columns be?
+
+```css
+.grid {
+  display: grid;
+  width: 500px;
+  grid-template-columns: 50px 1fr 2fr;
+}
+```
+
+- [ ] The first column will have a width of 50px. The second column will be 50px wide and the third column will be 100px wide.
+- [x] The first column will have a width of 50px. The second column will be 150px wide and the third column will be 300px wide.
+- [ ] The first column will have a width of 50px. The second column will be 300px wide and the third column will be 150px wide.
+- [ ] The first column will have a width of 50px. The second column will be 500px wide and the third column will be 1000px wide.
+
+#### Q28. What is the line-height property primarily used for?
+
+- [x] to control the height of the space between two lines of content
+- [ ] to control the height of the space between heading elements
+- [ ] to control the height of the character size
+- [ ] to control the width of the space between characters
+
+#### Q29. In the shorthand example below, which individual background properties are represented?
+
+`background: blue url(image.jpg) no-repeat scroll 0px 0px;`
+
+- [x]
+```css
+background-color: blue;
+background-image: url(image.jpg);
+background-repeat: no-repeat;
+background-attachment: scroll;
+background-position: 0px 0px;
+```
+
+- [ ]
+```css
+background-color: blue;
+background-img: url(image.jpg);
+background-position: no-repeat;
+background-scroll: scroll;
+background-size: 0px 0px;
+```
+
+- [ ]
+```css
+background-color: blue;
+background-src: url(image.jpg);
+background-repeat: no-repeat;
+background-wrap: scroll;
+background-position: 0px 0px;
+```
+
+- [ ]
+```css
+background-color: blue;
+background-src: url(image.jpg);
+background-repeat: no-repeat;
+background-scroll: scroll;
+background-position: 0px 0px;
+```
+
+#### Q30. In the following example, according to cascading and specificity rules, what color will the link be?
+
+```css
+.example {
+  color: yellow;
+}
+ul li a {
+  color: blue;
+}
+ul a {
+  color: green;
+}
+a {
+  color: red;
+}
+```
+
+```html
+<ul>
+  <li><a href="#" class="example">link</a></li>
+  <li>list item</li>
+  <li>list item</li>
+</ul>
+```
+
+- [ ] green
+- [x] yellow
+- [ ] blue
+- [ ] red
+
+#### Q31. When elements overlap, they are ordered on the z-axis (i.e., which element covers another). The z-index property can be used to specify the z-order of overlapping elements. Which set of statements about the z-index property are true?
+
+- [x] Larger z-index values appear on top of elements with a lower z-index value. Negative and positive numbers can be used. z-index can only be used on positioned elements.
+- [ ] Smaller z-index values appear on top of elements with a larger z-index value. Negative and positive numbers can be used. z-index must also be used with positioned elements.
+- [ ] Larger z-index values appear on top of elements with a lower z-index value. Only positive numbers can be used. z-index must also be used with positioned elements.
+- [ ] Smaller z-index values appear on top of elements with a larger z-index value. Negative and positive numbers can be used. z-index can be used with or without positioned elements.
+
+#### Q32. What is the difference between the following line-height settings?
+
+```css
+line-height: 20px
+line-height: 2
+```
+
+- [x] The value of 20px will set the line-height to 20px. The value of 2 will set the line-height to twice the size of the corresponding font-size value.
+- [ ] The value of 20px will set the line-height to 20px. The value of 2 is not valid.
+- [ ] The value of 20px will set the line-height to 20px. The value of 2 will default to a value of 2px.
+- [ ] The value of 20px will set the line-height to 20px. The value of 2 will set the line-height to 20% of the corresponding font-size value.
+
+#### Q33. In the following example, what color will paragraph one and paragraph two be? (_Alternative_: In this example, what color will paragraphs one and two be?)
+
+```html
+<section>
+  <p>paragraph one</p>
+</section>
+
+<p>paragraph two</p>
+```
+
+```css
+section p {
+  color: red;
+}
+section + p {
+  color: blue;
+}
+```
+
+- [ ] Paragraph one will be blue, paragraph two will be red.
+- [ ] Both paragraphs will be blue.
+- [x] Paragraphs one will be red, paragraph two will be blue.
+- [ ] Both paragraphs will be red.
+
+#### Q34.What are three valid ways of adding CSS to an HTML page?
+
+- [ ]
+```markdown
+1. External; CSS is written in a separate file.
+2. Inline; CSS is added to the <head> of the HTML page.
+3. Internal; CSS is included within the HTML tags.
+```
+
+- [ ]
+```markdown
+1. External; CSS is written in a separate file and is linked within the <header> element of the HTML file.
+2. Inline; CSS is added to the HTML tag.
+3. Internal; CSS is included within the <header> element of the HTML file.
+```
+
+- [ ]
+```markdown
+1. External; CSS is written in a separate file and is linked within the <head> element of the HTML file.
+2. Internal; CSS is included within the <header> element of the HTML file.
+3. Inline; CSS is added to the HTML tag.
+```
+
+- [x]
+```markdown
+1. External; CSS is written in a separate file and is linked within the <head> element of the HTML file .
+2. Inline; CSS is added to the HTML tag.
+3. Internal; CSS is included within the <head> element of the HTML file.
+```
+
+#### Q35. Which of the following is true of the SVG image format? (_Alternative_: Which statement about the SVG image format is true?)
+
+- [ ] CSS can be applied to SVGs but JavaScript cannot be.
+- [ ] SVGs work best for creating 3D graphics.
+- [x] SVGs can be created as a vector graphic or coded using SVG specific elements such as &#x3C;svg&#x3E;, &#x3C;line&#x3E;, and &#x3C;ellipse&#x3E;.
+- [ ] SVGs are a HAML-based markup language for creating vector graphics.
+
+#### Q36. In the example below, when will the color pink be applied to the anchor element?
+
+```css
+a:active {
+  color: pink;
+}
+```
+
+- [ ] The color of the link will display as pink after its been clicked or if the mouse is hovering over the link.
+- [ ] The color of the link will display as pink on mouse hover.
+- [x] The color of the link will display as pink while the link is being clicked but before the mouse click is released.
+- [ ] The color of the link will display as pink before it has been clicked.
+
+#### Q37. To change the color of an SVG using CSS, which property is used?
+
+- [ ] Use background-fill to set the color inside the object and stroke or border to set the color of the border.
+- [ ] The color cannot be changed with CSS.
+- [ ] Use fill or background to set the color inside the object and stroke to set the color of the border.
+- [x] Use fill to set the color inside the object and stroke to set the color of the border.
+
+#### Q38. When using position: fixed, what will the element always be positioned relative to?
+
+- [ ] the closest element with position: relative
+- [x] the viewport
+- [ ] the parent element
+- [ ] the wrapper element
+
+#### Q39. By default, a background image will repeat `\_\_\_`
+
+- [ ] only if the background-repeat property is set to repeat
+- [x] indefinitely, vertically, and horizontally
+- [ ] indefinitely on the horizontal axis only
+- [ ] once, on the x and y axis
+
+#### Q40. There are two sibling combinators that can be used to select elements contained within the same parent element; the general sibling combinator (~) and the adjacent sibling combinator (+). Referring to example below, which elements will the styles be applied to?
+
+```css
+h2 ~ p {
+  color: blue;
+}
+h2 + p {
+  background: beige;
+}
+```
+
+```html
+<section>
+  <p>paragraph 1</p>
+  <h2>Heading</h2>
+  <p>paragraph 2</p>
+  <p>paragraph 3</p>
+</section>
+```
+
+- [ ] Paragraphs 2 and 3 will be blue. The h2 and paragraph 2 will have a beige background.
+- [x] Paragraphs 2, and 3 will be blue, and paragraph 2 will have a beige background.
+- [x] Paragraphs 2 and 3 will be blue. Paragraph 2 will have a beige background.
+- [ ] Paragraph 2 will be blue. Paragraphs 2 and 3 will have a beige background.
