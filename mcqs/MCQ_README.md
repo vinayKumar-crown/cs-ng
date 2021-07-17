@@ -1767,8 +1767,6 @@ export class ProductComponent {
 - [ ] It produces an error, since ngIf is not a built-in structural directive.
 - [x] If the product class field is "truthy," then the rendered DOM will include the `<div>` with the value of the `product.name` field. If it is not "truthy,' the rendered DOM will not contain the `<div>` element.
 
-[Reference (angular.io)](https://angular.io/api/common/NgIf)
-
 #### Q117. What does this code accomplish?
 
 ```javascript
@@ -1804,8 +1802,6 @@ platformBrowserDynamic().bootstrapModule(AppModule);
 - [ ] There is an error. The correct property name is _onResolve_.
 - [ ] The _UserComponent_ will have a parameter in its constructor for _user_, and the _router_ will handle injecting in a value for that from a call to a _user_ method in the _UserResolverService_.
 
-[Reference (angular.io)](https://angular.io/api/router/Resolve)
-
 #### Q119. What is the purpose of the ContentChildren decorator in this component class?
 
 ```javascript
@@ -1823,16 +1819,12 @@ export class TabsListComponent {
 - [x] It provides access from within the component class to any _TabComponent_ components that were content projected into the <ng-content> for this component.
 - [ ] It restricts the allowed elements that can be put into a _TabsListComponent_ element to allow only _TabComponent_ elements.
 
-[Reference (betterprogramming.pub)](https://betterprogramming.pub/understanding-contentchildren-with-an-example-e76ce78968db)
-
 #### Q120. In order for Angular to process components in an application, where do the component types need to be registered?
 
 - [ ] within a script tag in the index.html file
 - [ ] in an NgModule decorator metadata tag named _components_
 - [ ] No registration is needed simply include the component files in an app directory.
 - [x] in an NgModule decorator metadata property named _declarations_
-
-[Reference (angular.io)](https://angular.io/guide/ngmodule-api#ngmodule-metadata)
 
 #### Q121. What is the purpose of the `fixture.detectChanges()` call in this unit test?
 
@@ -1854,8 +1846,6 @@ expect(fixture.nativeElement.querySelector('h1').textContent).toContain(
 - [x] It forces Angular to perform change detection, which will render the _UserCardComponent_ before you can validate its template.
 - [ ] It is used to log change-detection events to the console during unit test runs.
 
-[Reference (angular.io)](https://angular.io/api/core/testing/ComponentFixture#detectChanges)
-
 #### Q122. What will the URL segment look like based on the following call to the `Router.navigate` method when goToUser is passed the value 15?
 
 ```javascript
@@ -1871,8 +1861,6 @@ export class ToolsComponent {
 - [ ] /user?id=15
 - [ ] /user:15
 - [ ] /user;id=15
-
-[Reference (angular.io)](https://angular.io/api/router/Router#navigate)
 
 #### Q123. When a service is provided for root and is also added to the provider's configuration for a lazy-loaded module, what instance of that service does the
 injector provide to constructors in the lazy-loaded module?
