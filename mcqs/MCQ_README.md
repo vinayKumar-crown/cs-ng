@@ -46,31 +46,31 @@
 ![Sample text](images/ss-2.png?raw=true)
 
 - [ ]
-`<details>
+```html<details>
   <summary>Parmesan Deviled Eggs</summary>
   <p>
     These delectable little bites are made with organic eggs, fresh Parmesan, and chopped pine nuts.
   </p>
-</details>`
+</details>```
 
 - [ ]
-`<h4>▸ Parmesan Deviled Eggs</h4>
+```html<h4>▸ Parmesan Deviled Eggs</h4>
 <p>
   These delectable little bites are made with organic eggs, fresh Parmesan, and chopped pine nuts.
-</p>`
+</p>```
 
 - [x]
-`<details open>
+```html<details open>
   <summary>Parmesan Deviled Eggs</summary>
   <p>
     These delectable little bites are made with organic eggs, fresh Parmesan, and chopped pine nuts.
   </p>
-</details>`
+</details>```
 
 - [ ]
-`<details>
+```html<details>
   <h4>▸ Parmesan Deviled Eggs</h4>
   <p>
     These delectable little bites are made with organic eggs, fresh Parmesan, and chopped pine nuts.
   </p>
-</details>`
+</details>```
