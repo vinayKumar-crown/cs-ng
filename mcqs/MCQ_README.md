@@ -2292,3 +2292,16 @@ getSettings()
 - [x] new BehaviourSubject(null);
 - [ ] new Subject();
 
+#### Q162. With the following TestBed setup, what can be used to access the rendered DOM for the UserCardComponent?
+
+```javascript
+TestBed.configureTestingModule({
+ declarations: [ UserCardComponent ]
+});
+let fixture = TestBed.createComponent(UserCardComponent);
+```
+
+- [x] `fixture.componentTemplate`
+- [ ] `fixture.getComponentHtml()`
+- [ ] `fixture.nativeElement`
+- [ ] `fixture.componentInstance.template`
